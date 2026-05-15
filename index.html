@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Football Tracker - Match Center</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to external JS file -->
+    <script src="script.js" defer></script>
+</head>
+<!-- 
+    TREASURE HUNT START
+    The classes below are part of the hidden riddle! 
+-->
+<body class="I">
+
+    <header class="offer">
+        <div class="header-container">
+            <h1>Global Football Tracker</h1>
+            <span class="but">Live Match Center & Statistics Dashboard</span>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#live">Live Match</a></li>
+                    <li><a href="#stats">Team Stats</a></li>
+                    <li><a href="#lineups">Lineups</a></li>
+                    <li><a href="#performers">Top Players</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="plates">
+        
+        <!-- Live Match Section -->
+        <section id="live" class="scoreboard">
+            <div class="live-indicator">
+                <span class="pulse"></span> LIVE
+            </div>
+            <h2>Championship Finals</h2>
+            <p class="venue">Stadium: Grand Arena | Referee: M. Oliver</p>
+            
+            <div class="teams">
+                <div class="team-card team-home">
+                    <img src="https://via.placeholder.com/80/e74c3c/ffffff?text=RD" alt="Red Devils Crest">
+                    <div class="team-name">Red Devils</div>
+                    <span class="score" id="score-home">0</span>
+                </div>
+                
+                <div class="match-time">
+                    <div id="match-clock">45:00</div>
+                    <div>HALF TIME</div>
+                </div>
+                
+                <div class="team-card team-away">
+                    <span class="score" id="score-away">0</span>
+                    <div class="team-name">Blue Eagles</div>
+                    <img src="https://via.placeholder.com/80/2a5298/ffffff?text=BE" alt="Blue Eagles Crest">
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button class="btn-simulate" id="btn-simulate">Simulate 2nd Half Event</button>
+            </div>
+            
+            <div class="event-log-container">
+                <h3>Match Commentary</h3>
+                <div class="event-log" id="event-log">Waiting for the second half to begin...</div>
+                <ul id="event-history" class="event-history">
+                    <li><strong>45'</strong> - Referee blows the whistle for half time.</li>
+                    <li><strong>32'</strong> - Yellow card for Blue Eagles defender.</li>
+                    <li><strong>12'</strong> - Great save by the Red Devils keeper!</li>
+                    <li><strong>1'</strong> - Kickoff! The match is underway.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Match Stats Section -->
+        <section id="stats" class="match-stats">
+            <h2>Match Statistics</h2>
+            <div class="stat-row">
+                <span class="stat-home">45%</span>
+                <span class="stat-label">Possession</span>
+                <span class="stat-away">55%</span>
+            </div>
+            <div class="stat-bar"><div class="bar-home" style="width: 45%;"></div><div class="bar-away" style="width: 55%;"></div></div>
+
+            <div class="stat-row">
+                <span class="stat-home" id="shots-home">4</span>
+                <span class="stat-label">Shots on Target</span>
+                <span class="stat-away" id="shots-away">6</span>
+            </div>
+            <div class="stat-bar"><div class="bar-home" style="width: 40%;"></div><div class="bar-away" style="width: 60%;"></div></div>
+
+            <div class="stat-row">
+                <span class="stat-home">2</span>
+                <span class="stat-label">Corner Kicks</span>
+                <span class="stat-away">5</span>
+            </div>
+            <div class="stat-bar"><div class="bar-home" style="width: 28%;"></div><div class="bar-away" style="width: 72%;"></div></div>
+        </section>
+
+        <!-- Top Performers Section -->
+        <section id="performers">
+            <h2>Top Performing Players</h2>
+            <ul class="serve">
+                <li class="no">
+                    <div class="player-avatar">MR</div>
+                    <h3>Striker - Marcus R.</h3>
+                    <p><strong>Team:</strong> Red Devils</p>
+                    <p><strong>Position:</strong> Forward</p>
+                    <p><strong>Rating:</strong> 8.5/10</p>
+                    <p><strong>Shots:</strong> 3</p>
+                </li>
+                <li class="no">
+                    <div class="player-avatar">KD</div>
+                    <h3>Playmaker - Kevin D.</h3>
+                    <p><strong>Team:</strong> Blue Eagles</p>
+                    <p><strong>Position:</strong> Midfielder</p>
+                    <p><strong>Rating:</strong> 8.8/10</p>
+                    <p><strong>Passes:</strong> 42</p>
+                </li>
+                <li class="no">
+                    <div class="player-avatar">VV</div>
+                    <h3>Wall - Virgil V.</h3>
+                    <p><strong>Team:</strong> Blue Eagles</p>
+                    <p><strong>Position:</strong> Defender</p>
+                    <p><strong>Rating:</strong> 7.9/10</p>
+                    <p><strong>Tackles:</strong> 5</p>
+                </li>
+                <li class="no">
+                    <div class="player-avatar">AB</div>
+                    <h3>Guardian - Alisson B.</h3>
+                    <p><strong>Team:</strong> Red Devils</p>
+                    <p><strong>Position:</strong> Goalkeeper</p>
+                    <p><strong>Rating:</strong> 8.2/10</p>
+                    <p><strong>Saves:</strong> 4</p>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="meals">
+        <div class="footer-content">
+            <p>&copy; 2026 Global Football Tracker. Code designed for a special challenge.</p>
+            <p>Can you find the hidden riddle in the source code?</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms of Service</a> | 
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
