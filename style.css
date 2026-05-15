@@ -31,10 +31,6 @@ a {
     color: inherit;
 }
 
-/* ==========================================================================
-   TREASURE HUNT HIDDEN CLASSES
-   Riddle: "I offer plates but serve no meals"
-   ========================================================================== */
 .I {
     display: flex;
     flex-direction: column;
